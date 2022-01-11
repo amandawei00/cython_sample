@@ -5,7 +5,7 @@ For clarity:
 4. Running setup.py will result in the file with the name test.cpython-36m-x86_64-linux-gnu.so. setup.py needs to be called whenever test.pyx is changed in order to see the changes in the shared object.
 5. run.py imports the shared object file and tests the Cython version of things by calling its functions.
 6. benchmark.py compares the speed of an integral as called in Python with the speed of the same integral called with Cython.
-
+7. spline_c.c is an interpolation routine in C for your reference in case you find it useful.
 I am running the code in Linux with the following versions. Sometimes, differences in versions can cause annoying errors so this is something worth double checking.
 Python 3.6.8
 Cython 0.29.14
